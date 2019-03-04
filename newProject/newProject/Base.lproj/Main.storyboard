@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x3Z-r3-2AW">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="889.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ClosedSpase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAh-0Z-Lu5">
                                                 <rect key="frame" x="137" y="70" width="101" height="21"/>
@@ -93,7 +93,7 @@
                         <constraints>
                             <constraint firstItem="NTv-jI-YfB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Asj-p4-p6f"/>
                             <constraint firstAttribute="bottom" secondItem="NTv-jI-YfB" secondAttribute="bottom" id="Auu-1y-2dI"/>
-                            <constraint firstItem="x3Z-r3-2AW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="4:3" id="ZTY-5t-wvi"/>
+                            <constraint firstItem="x3Z-r3-2AW" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="ZTY-5t-wvi"/>
                             <constraint firstItem="NTv-jI-YfB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZUv-6k-PWh"/>
                             <constraint firstItem="x3Z-r3-2AW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="iqb-5J-X98"/>
                             <constraint firstAttribute="trailing" secondItem="NTv-jI-YfB" secondAttribute="trailing" id="uGl-bJ-gzl"/>
@@ -101,9 +101,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="inScrollView" destination="x3Z-r3-2AW" id="isa-9T-Biw"/>
                         <outlet property="loginTextField" destination="lmL-kf-tos" id="qsB-Co-xez"/>
                         <outlet property="mainText" destination="nAh-0Z-Lu5" id="KKS-fc-D4N"/>
                         <outlet property="passwordTextField" destination="OKd-Os-l78" id="keP-wX-MLW"/>
+                        <outlet property="scrollView" destination="NTv-jI-YfB" id="xJU-Oe-Opl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
