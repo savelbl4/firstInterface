@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    let signInSegue = "signInSegue"
+    private let signInSegue = "signInSegue"
     
     @IBOutlet weak var mainText: UILabel!
     @IBOutlet weak var loginTextField: UITextField!
@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
     @IBAction func signIn(_ sender: Any) {
         if let login = loginTextField.text, let passwd = passwordTextField.text {
             if login == "u" && passwd == "p" {
-//                print("ура")
+                print("ура")
                 performSegue(withIdentifier: signInSegue, sender: self)
             } else {
                 print("не ура")
@@ -72,5 +72,9 @@ class LoginViewController: UIViewController {
         
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+        //do nothing
     }
 }
