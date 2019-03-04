@@ -10,7 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    private let signInSegue = "signInSegue"
+    private let signInSegueYes = "signInSegueYes"
+    private let signInSegueNo = "signInSegueNo"
     
     @IBOutlet weak var mainText: UILabel!
     @IBOutlet weak var loginTextField: UITextField!
@@ -31,10 +32,17 @@ class LoginViewController: UIViewController {
         if let login = loginTextField.text, let passwd = passwordTextField.text {
             if login == "u" && passwd == "p" {
                 print("ура")
-                performSegue(withIdentifier: signInSegue, sender: self)
+                performSegue(withIdentifier: signInSegueYes, sender: self)
             } else {
                 print("не ура")
+                performSegue(withIdentifier: signInSegueNo, sender: self)
             }
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let redVC = segue.destination as? RedViewController {
+            redVC.login = loginTextField.text
         }
     }
     
