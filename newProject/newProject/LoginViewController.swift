@@ -10,6 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    let signInSegue = "signInSegue"
+    
+    @IBOutlet weak var mainText: UILabel!
+    @IBOutlet weak var loginTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var inScrollView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,19 +27,13 @@ class LoginViewController: UIViewController {
         scrollView?.addGestureRecognizer(hideKeyboardGesture)
     }
     
-    @IBOutlet weak var mainText: UILabel!
-    @IBOutlet weak var loginTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var inScrollView: UIView!
-    @IBAction func singIn(_ sender: Any) {
+    @IBAction func signIn(_ sender: Any) {
         if let login = loginTextField.text, let passwd = passwordTextField.text {
-            if login == "user" && passwd == "passwd" {
-                print("ура")
-                mainText.text = "привет"
+            if login == "u" && passwd == "p" {
+//                print("ура")
+                performSegue(withIdentifier: signInSegue, sender: self)
             } else {
                 print("не ура")
-                mainText.text = "пока"
             }
         }
     }

@@ -71,13 +71,13 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFk-lc-J84">
                                                 <rect key="frame" x="164" y="305" width="47" height="62"/>
-                                                <state key="normal" title="Sing in"/>
+                                                <state key="normal" title="Sign in"/>
                                                 <connections>
-                                                    <action selector="singIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YMG-cw-fFf"/>
+                                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fFQ-s3-5hp"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.58265853160000003" green="1" blue="0.73767973639999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="CFk-lc-J84" firstAttribute="centerX" secondItem="x3Z-r3-2AW" secondAttribute="centerX" id="0Jc-vD-xZq"/>
                                             <constraint firstItem="lmL-kf-tos" firstAttribute="top" secondItem="4Wo-oh-33z" secondAttribute="bottom" constant="20" id="1Fx-yr-Bae"/>
@@ -122,11 +122,27 @@
                         <outlet property="mainText" destination="nAh-0Z-Lu5" id="KKS-fc-D4N"/>
                         <outlet property="passwordTextField" destination="OKd-Os-l78" id="keP-wX-MLW"/>
                         <outlet property="scrollView" destination="NTv-jI-YfB" id="xJU-Oe-Opl"/>
+                        <segue destination="i3Z-9U-Pgf" kind="show" identifier="signInSegue" id="Guo-HZ-TCY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="61.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v3x-kf-IFM">
+            <objects>
+                <viewController id="i3Z-9U-Pgf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mq3-WL-xiD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.81806795290000001" green="0.54512276449999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4st-fn-Fct"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="krN-xT-EvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839" y="27"/>
         </scene>
     </scenes>
 </document>
