@@ -139,26 +139,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-TZ-6tl">
-                                <rect key="frame" x="172.5" y="318.5" width="30" height="30"/>
+                                <rect key="frame" x="50" y="70" width="30" height="30"/>
                                 <state key="normal" title="quit"/>
                                 <connections>
                                     <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="byd-mE-wOT"/>
                                     <segue destination="Ctd-1I-yTA" kind="unwind" unwindAction="unwindWithSegue:" id="dyF-nt-7dl"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wxa-hR-oFN">
+                                <rect key="frame" x="67" y="220" width="240" height="266"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="101" id="3Sc-zc-jtb">
+                                        <rect key="frame" x="0.0" y="28" width="240" height="101"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Sc-zc-jtb" id="Rcm-P6-uje">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="100.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.24745020693270636" blue="0.21613577496300163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="TLK-TZ-6tl" firstAttribute="centerY" secondItem="mq3-WL-xiD" secondAttribute="centerY" id="a3d-QN-CUc"/>
-                            <constraint firstItem="TLK-TZ-6tl" firstAttribute="centerX" secondItem="mq3-WL-xiD" secondAttribute="centerX" id="d5y-Ma-1BP"/>
+                            <constraint firstItem="TLK-TZ-6tl" firstAttribute="leading" secondItem="4st-fn-Fct" secondAttribute="leading" constant="50" id="KNI-UA-EOY"/>
+                            <constraint firstItem="TLK-TZ-6tl" firstAttribute="top" secondItem="4st-fn-Fct" secondAttribute="top" constant="50" id="ib6-QB-sed"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4st-fn-Fct"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="wxa-hR-oFN" id="TeE-YT-dnm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krN-xT-EvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Ctd-1I-yTA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="857" y="387"/>
+            <point key="canvasLocation" x="856.79999999999995" y="386.35682158920542"/>
         </scene>
         <!--ДВА-->
         <scene sceneID="Fk3-Ym-20p">
@@ -280,6 +298,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Wmo-he-zCC" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qEK-EZ-yhs">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

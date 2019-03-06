@@ -13,6 +13,7 @@
 		851A1BF72229C5910085D2A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 851A1BF62229C5910085D2A6 /* Assets.xcassets */; };
 		851A1BFA2229C5910085D2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851A1BF82229C5910085D2A6 /* LaunchScreen.storyboard */; };
 		851A1C022229C5E00085D2A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851A1C012229C5E00085D2A6 /* LoginViewController.swift */; };
+		85331F4422303F2A005D3B51 /* YellowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		851A1BF92229C5910085D2A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		851A1BFB2229C5910085D2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		851A1C012229C5E00085D2A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				851A1BF62229C5910085D2A6 /* Assets.xcassets */,
 				851A1BF82229C5910085D2A6 /* LaunchScreen.storyboard */,
 				851A1BFB2229C5910085D2A6 /* Info.plist */,
+				85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */,
 			);
 			path = newProject;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				851A1C022229C5E00085D2A6 /* LoginViewController.swift in Sources */,
 				851A1BF22229C58F0085D2A6 /* RedViewController.swift in Sources */,
 				851A1BF02229C58F0085D2A6 /* AppDelegate.swift in Sources */,
+				85331F4422303F2A005D3B51 /* YellowTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
