@@ -23,13 +23,17 @@ class RedViewController: UIViewController {
 
 extension RedViewController : UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let yellowCell = YellowTableViewCell()
-        yellowCell.contentView.backgroundColor = .yellow
-        return yellowCell
+        let cell = YellowTableViewCell()
+        if indexPath.row < 2 {
+            cell.contentView.backgroundColor = .purple
+        } else {
+            cell.contentView.backgroundColor = .green
+        }
+        return cell
     }
     
     
