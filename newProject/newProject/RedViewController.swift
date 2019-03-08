@@ -22,12 +22,21 @@ class RedViewController: UIViewController {
 }
 
 extension RedViewController : UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 40
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Yellow", for: indexPath)
+        if indexPath.section == 0 {
+            cell.contentView.backgroundColor = .green
+        } else {
+            cell.contentView.backgroundColor = .yellow
+        }
         return cell
     }
 }
