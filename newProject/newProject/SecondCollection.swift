@@ -20,11 +20,14 @@ class SecondCollection: UIViewController {
     }
     
     @IBAction func didSelectNewCity(segue: UIStoryboardSegue) {
-//        if let vc = segue.source as? SecondTable {
-//            print(vc.cities)
-//            vs as! UITableView
-//            guard let indexPath = vc.
-//        }
+        if let vc = segue.source as? OneTableViewController {
+            guard let indexPath = vc.tableView.indexPathForSelectedRow else {
+                return
+            }
+            let newCity = vc.cities[indexPath.row]
+            cities.append(newCity)
+            secCollectionView.reloadData()
+        }
     }
 
 }
@@ -37,7 +40,7 @@ extension SecondCollection: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let id = RedCollectionViewCell.className()
         let cell = secCollectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath) as! RedCollectionViewCell
-        cell.cityLabel.text = "привет"//cities[indexPath.row]
+        cell.cityLabel.text = cities[indexPath.row]
         return cell
     }
     

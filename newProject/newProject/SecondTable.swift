@@ -34,4 +34,8 @@ extension SecondTable : UITableViewDataSource {
         cell.textLabel?.text = cities[indexPath.row]
         return cell
     }
+    
 }
+
+//extension SecondTable : UITableViewController {
+//}

@@ -21,6 +21,7 @@
 		85331F5C22352165005D3B51 /* GreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */; };
 		85331F5E22352F40005D3B51 /* RedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5D22352F40005D3B51 /* RedTableViewCell.swift */; };
 		85331F60223534A5005D3B51 /* RedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */; };
+		85538900223549BD009AD98B /* OneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855388FF223549BD009AD98B /* OneTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		85331F5D22352F40005D3B51 /* RedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTableViewCell.swift; sourceTree = "<group>"; };
 		85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCollectionViewCell.swift; sourceTree = "<group>"; };
+		855388FF223549BD009AD98B /* OneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */,
 				85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */,
 				85331F5D22352F40005D3B51 /* RedTableViewCell.swift */,
+				855388FF223549BD009AD98B /* OneTableViewController.swift */,
 			);
 			path = newProject;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				85331F5A22332D02005D3B51 /* SecondCollection.swift in Sources */,
 				851A1C022229C5E00085D2A6 /* LoginViewController.swift in Sources */,
 				851A1BF22229C58F0085D2A6 /* RedViewController.swift in Sources */,
+				85538900223549BD009AD98B /* OneTableViewController.swift in Sources */,
 				851A1BF02229C58F0085D2A6 /* AppDelegate.swift in Sources */,
 				85331F5622332CB0005D3B51 /* SecondTable.swift in Sources */,
 				85331F60223534A5005D3B51 /* RedCollectionViewCell.swift in Sources */,
