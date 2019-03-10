@@ -431,6 +431,7 @@
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="1" green="0.2474502069" blue="0.216135775" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="Nzd-0P-m0r" firstAttribute="centerX" secondItem="KVT-iR-nrl" secondAttribute="centerX" id="HdZ-ok-vJP"/>
                                             <constraint firstItem="Nzd-0P-m0r" firstAttribute="centerY" secondItem="KVT-iR-nrl" secondAttribute="centerY" id="uct-Wu-I9a"/>

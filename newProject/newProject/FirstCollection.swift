@@ -10,7 +10,7 @@ import UIKit
 
 class FirstCollection: UIViewController {
     
-    let cities = ["Стамбул", "Симферополь", "Самара", "Сыктывкар", "Самарканд", "Санпауло", "Сургут", "Санфранцыско", "Сумы", "Сингапур", "Салоу", "София", "Сусс", "Санья"]
+    let cities = ["Стамбул", "Симферополь", "Самара", "Сыктывкар", "Самарканд", "Сан-Паулу", "Сургут", "Сан-Франциско", "Сумы", "Сингапур", "Салоу", "София", "Сусс", "Санья"]
 
     @IBOutlet weak var firCollectionView: UICollectionView!
     override func viewDidLoad() {

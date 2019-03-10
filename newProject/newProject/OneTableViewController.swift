@@ -10,7 +10,7 @@ import UIKit
 
 class OneTableViewController: UITableViewController {
     
-    var cities = ["Стамбул", "Симферополь", "Самара", "Сыктывкар", "Самарканд", "Санпауло", "Сургут", "Санфранцыско", "Сумы", "Сингапур", "Салоу", "София", "Сусс", "Санья"]
+    var cities = ["Стамбул", "Симферополь", "Самара", "Сыктывкар", "Самарканд", "Сан-Паулу", "Сургут", "Сан-Франциско", "Сумы", "Сингапур", "Салоу", "София", "Сусс", "Санья"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,4 +29,10 @@ class OneTableViewController: UITableViewController {
         return cell
     }
 
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        navigationController?.popViewController(animated: true)
+//        selectedCity = cities[indexPath.row]
+//        print(selectedCity)
+//    }
+    
 }
