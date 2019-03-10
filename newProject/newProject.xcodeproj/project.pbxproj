@@ -19,6 +19,8 @@
 		85331F5822332CE7005D3B51 /* FirstCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5722332CE7005D3B51 /* FirstCollection.swift */; };
 		85331F5A22332D02005D3B51 /* SecondCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5922332D02005D3B51 /* SecondCollection.swift */; };
 		85331F5C22352165005D3B51 /* GreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */; };
+		85331F5E22352F40005D3B51 /* RedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5D22352F40005D3B51 /* RedTableViewCell.swift */; };
+		85331F60223534A5005D3B51 /* RedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		85331F5722332CE7005D3B51 /* FirstCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollection.swift; sourceTree = "<group>"; };
 		85331F5922332D02005D3B51 /* SecondCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollection.swift; sourceTree = "<group>"; };
 		85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCollectionViewCell.swift; sourceTree = "<group>"; };
+		85331F5D22352F40005D3B51 /* RedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTableViewCell.swift; sourceTree = "<group>"; };
+		85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,14 +77,16 @@
 				851A1BF12229C58F0085D2A6 /* RedViewController.swift */,
 				85331F5322332C86005D3B51 /* FirstTable.swift */,
 				85331F5722332CE7005D3B51 /* FirstCollection.swift */,
-				85331F5522332CB0005D3B51 /* SecondTable.swift */,
 				85331F5922332D02005D3B51 /* SecondCollection.swift */,
+				85331F5522332CB0005D3B51 /* SecondTable.swift */,
 				851A1BF32229C58F0085D2A6 /* Main.storyboard */,
 				851A1BF62229C5910085D2A6 /* Assets.xcassets */,
 				851A1BF82229C5910085D2A6 /* LaunchScreen.storyboard */,
 				851A1BFB2229C5910085D2A6 /* Info.plist */,
 				85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */,
 				85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */,
+				85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */,
+				85331F5D22352F40005D3B51 /* RedTableViewCell.swift */,
 			);
 			path = newProject;
 			sourceTree = "<group>";
@@ -162,7 +168,9 @@
 				851A1BF22229C58F0085D2A6 /* RedViewController.swift in Sources */,
 				851A1BF02229C58F0085D2A6 /* AppDelegate.swift in Sources */,
 				85331F5622332CB0005D3B51 /* SecondTable.swift in Sources */,
+				85331F60223534A5005D3B51 /* RedCollectionViewCell.swift in Sources */,
 				85331F5822332CE7005D3B51 /* FirstCollection.swift in Sources */,
+				85331F5E22352F40005D3B51 /* RedTableViewCell.swift in Sources */,
 				85331F4422303F2A005D3B51 /* YellowTableViewCell.swift in Sources */,
 				85331F5C22352165005D3B51 /* GreenCollectionViewCell.swift in Sources */,
 			);

@@ -9,7 +9,8 @@
 import UIKit
 
 class SecondTable: UIViewController {
-
+    var cities = ["Стамбул", "Симферополь", "Самара", "Сыктывкар", "Самарканд", "Санпауло", "Сургут", "Санфранцыско", "Сумы", "Сингапур", "Салоу", "София", "Сусс", "Санья"] 
+    
     @IBOutlet weak var secTableView: UITableView!
     
     override func viewDidLoad() {
@@ -23,15 +24,14 @@ class SecondTable: UIViewController {
 extension SecondTable : UITableViewDataSource {
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
+            return cities.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Red", for: indexPath)
-        
-        cell.contentView.backgroundColor = .red
-        
+        let id = RedTableViewCell.className()
+        let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as! RedTableViewCell
+        cell.textLabel?.text = cities[indexPath.row]
         return cell
     }
 }
