@@ -23,9 +23,15 @@ extension FirstCollection: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let id = String(describing: GreenCollectionViewCell.self)
+        let id = GreenCollectionViewCell.className()
         let cell = firCollectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath)
         return cell
     }
     
+}
+
+extension UICollectionViewCell {
+    static func className() -> String {
+        return String(describing: self)
+    }
 }
