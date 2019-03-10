@@ -444,6 +444,9 @@
                                             <constraint firstItem="3rT-h2-6sS" firstAttribute="centerX" secondItem="MBC-zu-kOj" secondAttribute="centerX" id="mxA-ZJ-LUu"/>
                                         </constraints>
                                         <size key="customSize" width="200" height="150"/>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="3rT-h2-6sS" id="ZNF-zT-5rP"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>

@@ -9,6 +9,8 @@
 import UIKit
 
 class FirstCollection: UIViewController {
+    
+    let cities = ["Стамбул", "Симферополь", "Самара", "Сыктывкар", "Самарканд", "Санпауло", "Сургут", "Санфранцыско", "Сумы", "Сингапур", "Салоу", "София", "Сусс", "Санья"]
 
     @IBOutlet weak var firCollectionView: UICollectionView!
     override func viewDidLoad() {
@@ -19,18 +21,19 @@ class FirstCollection: UIViewController {
 
 extension FirstCollection: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 14
+        return cities.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let id = GreenCollectionViewCell.className()
-        let cell = firCollectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath)
+        let cell = firCollectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath) as! GreenCollectionViewCell
+        cell.cityLabel.text = cities[indexPath.row]
         return cell
     }
     
 }
 
-extension UICollectionViewCell {
+extension NSObject {
     static func className() -> String {
         return String(describing: self)
     }

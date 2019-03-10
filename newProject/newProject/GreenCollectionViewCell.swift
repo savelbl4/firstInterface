@@ -9,5 +9,6 @@
 import UIKit
 
 class GreenCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var cityLabel: UILabel!
     
 }
