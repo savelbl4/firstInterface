@@ -19,11 +19,12 @@ class FirstCollection: UIViewController {
 
 extension FirstCollection: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 14
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = firCollectionView.dequeueReusableCell(withReuseIdentifier: "Green", for: indexPath)
+        let id = String(describing: GreenCollectionViewCell.self)
+        let cell = firCollectionView.dequeueReusableCell(withReuseIdentifier: id, for: indexPath)
         return cell
     }
     
