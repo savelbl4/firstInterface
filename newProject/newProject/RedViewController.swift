@@ -10,12 +10,32 @@ import UIKit
 
 class RedViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tempView: TempView!
     @IBOutlet weak var tableView: UITableView!
     var login: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let maskLayer = CAShapeLayer()
+        let starPath = UIBezierPath()
+        starPath.move(to: CGPoint(x: 40, y: 20))
+        starPath.addLine(to: CGPoint(x: 45, y: 40))
+        starPath.addLine(to: CGPoint(x: 65, y: 40))
+        starPath.addLine(to: CGPoint(x: 50, y: 50))
+        starPath.addLine(to: CGPoint(x: 60, y: 70))
+        starPath.addLine(to: CGPoint(x: 40, y: 55))
+        starPath.addLine(to: CGPoint(x: 20, y: 70))
+        starPath.addLine(to: CGPoint(x: 30, y: 50))
+        starPath.addLine(to: CGPoint(x: 15, y: 40))
+        starPath.addLine(to: CGPoint(x: 35, y: 40))
+        starPath.close()
+        starPath.stroke()
+        maskLayer.path = starPath.cgPath // Тот path, с помощью которого рисовали звезду
+        imageView.layer.mask = maskLayer
+
+        
         tableView.dataSource = self
         
         print(login)

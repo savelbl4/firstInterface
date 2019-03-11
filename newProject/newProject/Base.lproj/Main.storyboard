@@ -164,24 +164,34 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d22-kE-hvm" customClass="TempView" customModule="newProject" customModuleProvider="target">
-                                <rect key="frame" x="50" y="498" width="314" height="314"/>
+                                <rect key="frame" x="50" y="648" width="164" height="164"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="d22-kE-hvm" secondAttribute="height" multiplier="1:1" id="f42-og-3hc"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-apple-logo-180" translatesAutoresizingMaskIntoConstraints="NO" id="aWT-tm-1cd">
+                                <rect key="frame" x="109" y="482" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aWT-tm-1cd" secondAttribute="height" multiplier="1:1" id="dS0-XA-dhG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.24745020693270636" blue="0.21613577496300163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="4st-fn-Fct" firstAttribute="trailing" secondItem="aWT-tm-1cd" secondAttribute="trailing" constant="205" id="0zE-l5-9M8"/>
                             <constraint firstItem="TLK-TZ-6tl" firstAttribute="leading" secondItem="4st-fn-Fct" secondAttribute="leading" constant="50" id="KNI-UA-EOY"/>
+                            <constraint firstItem="d22-kE-hvm" firstAttribute="top" secondItem="aWT-tm-1cd" secondAttribute="bottom" constant="66" id="Y1N-LZ-tFM"/>
                             <constraint firstItem="TLK-TZ-6tl" firstAttribute="top" secondItem="4st-fn-Fct" secondAttribute="top" constant="50" id="ib6-QB-sed"/>
-                            <constraint firstItem="4st-fn-Fct" firstAttribute="trailing" secondItem="d22-kE-hvm" secondAttribute="trailing" constant="50" id="jQJ-jK-2Fh"/>
+                            <constraint firstItem="4st-fn-Fct" firstAttribute="trailing" secondItem="d22-kE-hvm" secondAttribute="trailing" constant="200" id="jQJ-jK-2Fh"/>
+                            <constraint firstItem="aWT-tm-1cd" firstAttribute="leading" secondItem="4st-fn-Fct" secondAttribute="leading" constant="109" id="ptV-CA-LE9"/>
                             <constraint firstItem="d22-kE-hvm" firstAttribute="leading" secondItem="4st-fn-Fct" secondAttribute="leading" constant="50" id="qIJ-9k-ahT"/>
                             <constraint firstItem="4st-fn-Fct" firstAttribute="bottom" secondItem="d22-kE-hvm" secondAttribute="bottom" constant="50" id="xor-iZ-Yxq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4st-fn-Fct"/>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="aWT-tm-1cd" id="WvE-nL-Ed0"/>
                         <outlet property="tableView" destination="wxa-hR-oFN" id="TeE-YT-dnm"/>
                         <outlet property="tempView" destination="d22-kE-hvm" id="Tqv-5u-wjP"/>
                     </connections>
@@ -525,6 +535,7 @@
     </scenes>
     <resources>
         <image name="icons8-apple-logo-120" width="90" height="90"/>
+        <image name="icons8-apple-logo-180" width="135" height="135"/>
         <image name="icons8-apple-logo-500" width="375" height="375"/>
     </resources>
 </document>
