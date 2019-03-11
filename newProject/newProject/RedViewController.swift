@@ -19,10 +19,10 @@ class RedViewController: UIViewController {
         super.viewDidLoad()
         
         let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [UIColor.black.withAlphaComponent(0.7).cgColor, UIColor.white.cgColor]
+        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.green.cgColor, UIColor.yellow.cgColor]
 //        олдово
 //        gradientLayer.locations = [0 as NSNumber, 1 as NSNumber]
-        gradientLayer.locations = [0, 1]
+        gradientLayer.locations = [0, 0.5, 1]
         gradientLayer.startPoint = CGPoint.zero
         gradientLayer.endPoint = CGPoint(x: 0, y: 1)
         
