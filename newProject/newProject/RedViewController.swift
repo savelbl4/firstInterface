@@ -17,22 +17,18 @@ class RedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        смещение
-        let translation = CGAffineTransform(translationX: 150, y: 0)
-//        увеличение
-        let scale = CGAffineTransform(scaleX: 1.5, y: 1)
-//        поворот
-        let rotation = CGAffineTransform(rotationAngle: .pi / 4)
-//        комбинирование
-        let combineTransform = scale.concatenating(rotation)
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnView(sender:)))
+//        let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(tapOnView(sender:)))
+        tempView.addGestureRecognizer(gestureRecognizer)
         
+//        отображаем ячейки tableView
         tableView.dataSource = self
-        
-        imageView.transform = combineTransform
-        tempView.transform = rotation
-        tableView.transform = translation
-        
     }
+    
+    @objc func tapOnView(sender: UIGestureRecognizer) {
+        print("Привет!!")
+    }
+    
 }
 
 extension RedViewController : UITableViewDataSource {
