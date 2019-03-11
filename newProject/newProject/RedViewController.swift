@@ -23,10 +23,12 @@ class RedViewController: UIViewController {
         let scale = CGAffineTransform(scaleX: 1.5, y: 1)
 //        поворот
         let rotation = CGAffineTransform(rotationAngle: .pi / 4)
+//        комбинирование
+        let combineTransform = scale.concatenating(rotation)
         
         tableView.dataSource = self
         
-        imageView.transform = scale
+        imageView.transform = combineTransform
         tempView.transform = rotation
         tableView.transform = translation
         
