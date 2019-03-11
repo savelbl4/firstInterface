@@ -18,22 +18,18 @@ class RedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let maskLayer = CAShapeLayer()
-        let starPath = UIBezierPath()
-        starPath.move(to: CGPoint(x: 40, y: 20))
-        starPath.addLine(to: CGPoint(x: 45, y: 40))
-        starPath.addLine(to: CGPoint(x: 65, y: 40))
-        starPath.addLine(to: CGPoint(x: 50, y: 50))
-        starPath.addLine(to: CGPoint(x: 60, y: 70))
-        starPath.addLine(to: CGPoint(x: 40, y: 55))
-        starPath.addLine(to: CGPoint(x: 20, y: 70))
-        starPath.addLine(to: CGPoint(x: 30, y: 50))
-        starPath.addLine(to: CGPoint(x: 15, y: 40))
-        starPath.addLine(to: CGPoint(x: 35, y: 40))
-        starPath.close()
-        starPath.stroke()
-        maskLayer.path = starPath.cgPath // Тот path, с помощью которого рисовали звезду
-        imageView.layer.mask = maskLayer
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [UIColor.black.withAlphaComponent(0.7).cgColor, UIColor.white.cgColor]
+//        олдово
+//        gradientLayer.locations = [0 as NSNumber, 1 as NSNumber]
+        gradientLayer.locations = [0, 1]
+        gradientLayer.startPoint = CGPoint.zero
+        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
+        
+        
+        tempView.layer.addSublayer(gradientLayer)
+        gradientLayer.frame = tempView.bounds
+
 
         
         tableView.dataSource = self
