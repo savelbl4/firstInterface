@@ -17,34 +17,19 @@ class RedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [UIColor.blue.cgColor, UIColor.yellow.cgColor]
-//        олдово
-//        gradientLayer.locations = [0 as NSNumber, 1 as NSNumber]
-        gradientLayer.locations = [0, 1]
-        gradientLayer.startPoint = CGPoint(x: 1, y: 0)
-        gradientLayer.endPoint = CGPoint(x: 0, y: 1)
-        
-        
-        tempView.layer.addSublayer(gradientLayer)
-        gradientLayer.frame = tempView.bounds
-
-
+//        смещение
+        let translation = CGAffineTransform(translationX: 150, y: 0)
+//        увеличение
+        let scale = CGAffineTransform(scaleX: 1.5, y: 1)
+//        поворот
+        let rotation = CGAffineTransform(rotationAngle: .pi / 4)
         
         tableView.dataSource = self
         
-        print(login)
+        imageView.transform = scale
+        tempView.transform = rotation
+        tableView.transform = translation
         
-//        играем с вьюхой
-        tempView.layer.borderWidth = 2
-        tempView.layer.borderColor = UIColor.red.cgColor
-//        tempView.layer.masksToBounds = true
-//        tempView.layer.cornerRadius = 100
-        tempView.layer.shadowRadius = 15
-        tempView.layer.shadowColor = UIColor.black.cgColor
-        tempView.layer.shadowOffset = CGSize.zero
-        tempView.layer.shadowOpacity = 0.5
     }
 }
 
