@@ -27,11 +27,10 @@ extension FirstTable : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Green", for: indexPath)
-        
-        cell.contentView.backgroundColor = .green
-        
+        let id = GreenTableViewCell.className()
+        let cell = tableView.dequeueReusableCell(withIdentifier: id, for: indexPath) as! GreenTableViewCell
+//        cell.textLabel?.text = cities[indexPath.row]
+//        cell.contentView.backgroundColor = .green
         return cell
     }
 }

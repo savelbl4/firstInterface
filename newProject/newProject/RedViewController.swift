@@ -10,6 +10,7 @@ import UIKit
 
 class RedViewController: UIViewController {
     
+    @IBOutlet weak var tempView: TempView!
     @IBOutlet weak var tableView: UITableView!
     var login: String?
     
@@ -18,6 +19,16 @@ class RedViewController: UIViewController {
         tableView.dataSource = self
         
         print(login)
+        
+//        играем с вьюхой
+        tempView.layer.borderWidth = 2
+        tempView.layer.borderColor = UIColor.red.cgColor
+//        tempView.layer.masksToBounds = true
+//        tempView.layer.cornerRadius = 100
+        tempView.layer.shadowRadius = 15
+        tempView.layer.shadowColor = UIColor.black.cgColor
+        tempView.layer.shadowOffset = CGSize.zero
+        tempView.layer.shadowOpacity = 0.5
     }
 }
 
