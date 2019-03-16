@@ -15,7 +15,7 @@ class FriendTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        заруглили
+//        закруглили
         friendImage.layer.masksToBounds = true
         friendImage.layer.cornerRadius = 50
     }

@@ -17,6 +17,8 @@ class RedViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print(login)
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnView(sender:)))
 //        let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(tapOnView(sender:)))
         tempView.addGestureRecognizer(gestureRecognizer)
