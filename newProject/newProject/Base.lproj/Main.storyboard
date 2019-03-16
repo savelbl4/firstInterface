@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wmo-he-zCC">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -170,10 +170,11 @@
                                     <constraint firstAttribute="width" secondItem="d22-kE-hvm" secondAttribute="height" multiplier="1:1" id="f42-og-3hc"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-apple-logo-180" translatesAutoresizingMaskIntoConstraints="NO" id="aWT-tm-1cd">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="r2-d2-64" translatesAutoresizingMaskIntoConstraints="NO" id="aWT-tm-1cd">
                                 <rect key="frame" x="109" y="482" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="aWT-tm-1cd" secondAttribute="height" multiplier="1:1" id="dS0-XA-dhG"/>
+                                    <constraint firstAttribute="width" constant="100" id="hEe-Yq-Huu"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -213,12 +214,79 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="kaR-hL-Wh6" kind="relationship" relationship="rootViewController" id="ICA-GV-827"/>
+                        <segue destination="6xo-aY-mwo" kind="relationship" relationship="rootViewController" id="ce2-ep-4AZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yru-VM-Z2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1654" y="-564"/>
+        </scene>
+        <!--Friend List View Controller-->
+        <scene sceneID="8ER-QZ-cbA">
+            <objects>
+                <viewController id="6xo-aY-mwo" customClass="FriendListViewController" customModule="newProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QMf-pw-mCc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UBz-GL-isk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendTableViewCell" rowHeight="120" id="NDw-uV-mjO" customClass="FriendTableViewCell" customModule="newProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NDw-uV-mjO" id="9lz-ym-dgg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oIL-md-nm1">
+                                                    <rect key="frame" x="10" y="10" width="100" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="3HQ-aV-kkj"/>
+                                                        <constraint firstAttribute="width" secondItem="oIL-md-nm1" secondAttribute="height" multiplier="1:1" id="UHp-W0-k7I"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTG-FJ-Utz">
+                                                    <rect key="frame" x="118" y="49" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zTG-FJ-Utz" firstAttribute="leading" secondItem="oIL-md-nm1" secondAttribute="trailing" constant="15" id="0Fz-cQ-kZw"/>
+                                                <constraint firstItem="zTG-FJ-Utz" firstAttribute="centerY" secondItem="9lz-ym-dgg" secondAttribute="centerY" id="XpL-fa-lVc"/>
+                                                <constraint firstItem="oIL-md-nm1" firstAttribute="leading" secondItem="9lz-ym-dgg" secondAttribute="leading" constant="10" id="YdX-ZQ-kPa"/>
+                                                <constraint firstAttribute="bottom" secondItem="oIL-md-nm1" secondAttribute="bottom" constant="10" id="dd3-43-7Mk"/>
+                                                <constraint firstItem="oIL-md-nm1" firstAttribute="top" secondItem="9lz-ym-dgg" secondAttribute="top" constant="10" id="o5I-Tr-FUb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="friendImage" destination="oIL-md-nm1" id="Bif-ho-IQF"/>
+                                            <outlet property="friendName" destination="zTG-FJ-Utz" id="obe-wc-NBZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UBz-GL-isk" secondAttribute="trailing" id="3jc-oO-Qlb"/>
+                            <constraint firstItem="UBz-GL-isk" firstAttribute="leading" secondItem="QMf-pw-mCc" secondAttribute="leading" id="XxO-cI-dDI"/>
+                            <constraint firstAttribute="bottom" secondItem="UBz-GL-isk" secondAttribute="bottom" id="cR4-1g-O8q"/>
+                            <constraint firstItem="UBz-GL-isk" firstAttribute="top" secondItem="QMf-pw-mCc" secondAttribute="top" id="kNE-U3-rJr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N0A-O5-tZ9"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ukw-pf-1dM"/>
+                    <connections>
+                        <outlet property="friendListTableView" destination="UBz-GL-isk" id="VDE-tw-j50"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pad-PM-ZVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.6376811594205" y="-1213.3928571428571"/>
         </scene>
         <!--First Table-->
         <scene sceneID="1cX-uN-2yp">
@@ -535,7 +603,7 @@
     </scenes>
     <resources>
         <image name="icons8-apple-logo-120" width="90" height="90"/>
-        <image name="icons8-apple-logo-180" width="135" height="135"/>
         <image name="icons8-apple-logo-500" width="375" height="375"/>
+        <image name="r2-d2-64" width="96" height="96"/>
     </resources>
 </document>

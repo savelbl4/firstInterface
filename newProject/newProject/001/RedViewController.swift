@@ -21,6 +21,11 @@ class RedViewController: UIViewController {
 //        let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(tapOnView(sender:)))
         tempView.addGestureRecognizer(gestureRecognizer)
         
+//        tempView.layer.borderWidth = 2
+//        tempView.layer.borderColor = UIColor.red.cgColor
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 50
+        
 //        отображаем ячейки tableView
         tableView.dataSource = self
     }
