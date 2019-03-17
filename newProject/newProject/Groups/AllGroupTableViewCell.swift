@@ -1,23 +1,23 @@
 //
-//  FriendTableViewCell.swift
+//  AllGroupTableViewCell.swift
 //  newProject
 //
-//  Created by serge on 15/03/2019.
+//  Created by serge on 17/03/2019.
 //  Copyright © 2019 serge. All rights reserved.
 //
 
 import UIKit
 
-class FriendTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var friendImage: UIImageView!
-    @IBOutlet weak var friendName: UILabel!
+class AllGroupTableViewCell: UITableViewCell {
     
+    @IBOutlet weak var imageOfGroup: UIImageView!
+    @IBOutlet weak var nameOfGroup: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-//        закруглили
-        friendImage.layer.masksToBounds = true
-        friendImage.layer.cornerRadius = 78/2
+        // Initialization code
+        imageOfGroup.layer.masksToBounds = true
+        imageOfGroup.layer.cornerRadius = 78/2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
