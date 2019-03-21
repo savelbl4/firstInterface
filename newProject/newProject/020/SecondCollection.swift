@@ -20,12 +20,8 @@ class SecondCollection: UIViewController {
     }
     
     @IBAction func didSelectNewCity(segue: UIStoryboardSegue) {
-        if let vc = segue.source as? OneTableViewController {
-            guard let indexPath = vc.tableView.indexPathForSelectedRow else {
-                return
-            }
-            let newCity = vc.cities[indexPath.row]
-            cities.append(newCity)
+        if let vc = segue.source as? SecondTable {
+            print(vc.cities)
             secCollectionView.reloadData()
         }
     }

@@ -10,15 +10,32 @@ import UIKit
 
 class RedViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var tempView: TempView!
     @IBOutlet weak var tableView: UITableView!
     var login: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.dataSource = self
         
         print(login)
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnView(sender:)))
+//        let gestureRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(tapOnView(sender:)))
+        tempView.addGestureRecognizer(gestureRecognizer)
+        
+//        tempView.layer.borderWidth = 2
+//        tempView.layer.borderColor = UIColor.red.cgColor
+        imageView.layer.masksToBounds = true
+        imageView.layer.cornerRadius = 50
+        
+//        отображаем ячейки tableView
+        tableView.dataSource = self
     }
+    
+    @objc func tapOnView(sender: UIGestureRecognizer) {
+        print("Привет!!")
+    }
+    
 }
 
 extension RedViewController : UITableViewDataSource {

@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85095A8C223C145D00949767 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 851A1BFB2229C5910085D2A6 /* Info.plist */; };
+		85095A8E223C1A3F00949767 /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85095A8D223C1A3F00949767 /* FriendListViewController.swift */; };
+		85095A90223C1A9C00949767 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85095A8F223C1A9C00949767 /* FriendTableViewCell.swift */; };
+		85095A93223CE9FA00949767 /* FriendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85095A92223CE9FA00949767 /* FriendCollectionViewCell.swift */; };
+		85095A99223D121C00949767 /* FriendCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85095A98223D121C00949767 /* FriendCollection.swift */; };
+		85095A9C223D2DDD00949767 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85095A9B223D2DDD00949767 /* UITableViewExtension.swift */; };
+		85095A9E223D2E5200949767 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85095A9D223D2E5200949767 /* UICollectionViewExtension.swift */; };
+		85095AA2223D2FE800949767 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85095AA1223D2FE800949767 /* Extension.swift */; };
 		851A1BF02229C58F0085D2A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851A1BEF2229C58F0085D2A6 /* AppDelegate.swift */; };
 		851A1BF22229C58F0085D2A6 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851A1BF12229C58F0085D2A6 /* RedViewController.swift */; };
 		851A1BF52229C58F0085D2A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851A1BF32229C58F0085D2A6 /* Main.storyboard */; };
@@ -14,17 +22,25 @@
 		851A1BFA2229C5910085D2A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 851A1BF82229C5910085D2A6 /* LaunchScreen.storyboard */; };
 		851A1C022229C5E00085D2A6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851A1C012229C5E00085D2A6 /* LoginViewController.swift */; };
 		85331F4422303F2A005D3B51 /* YellowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */; };
-		85331F5422332C86005D3B51 /* FirstTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5322332C86005D3B51 /* FirstTable.swift */; };
 		85331F5622332CB0005D3B51 /* SecondTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5522332CB0005D3B51 /* SecondTable.swift */; };
-		85331F5822332CE7005D3B51 /* FirstCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5722332CE7005D3B51 /* FirstCollection.swift */; };
 		85331F5A22332D02005D3B51 /* SecondCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5922332D02005D3B51 /* SecondCollection.swift */; };
-		85331F5C22352165005D3B51 /* GreenCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */; };
 		85331F5E22352F40005D3B51 /* RedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5D22352F40005D3B51 /* RedTableViewCell.swift */; };
 		85331F60223534A5005D3B51 /* RedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */; };
-		85538900223549BD009AD98B /* OneTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 855388FF223549BD009AD98B /* OneTableViewController.swift */; };
+		85C6C7712236B8DF00BCCA91 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C6C7702236B8DF00BCCA91 /* TempView.swift */; };
+		85E6FABB223DB5DB00FBBE09 /* GroupListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6FABA223DB5DB00FBBE09 /* GroupListViewController.swift */; };
+		85E6FABD223DB60600FBBE09 /* AddGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6FABC223DB60600FBBE09 /* AddGroupViewController.swift */; };
+		85E6FABF223E57AB00FBBE09 /* GroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6FABE223E57AB00FBBE09 /* GroupTableViewCell.swift */; };
+		85E6FAC1223E589100FBBE09 /* AllGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E6FAC0223E589100FBBE09 /* AllGroupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		85095A8D223C1A3F00949767 /* FriendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		85095A8F223C1A9C00949767 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		85095A92223CE9FA00949767 /* FriendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollectionViewCell.swift; sourceTree = "<group>"; };
+		85095A98223D121C00949767 /* FriendCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCollection.swift; sourceTree = "<group>"; };
+		85095A9B223D2DDD00949767 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		85095A9D223D2E5200949767 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		85095AA1223D2FE800949767 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		851A1BEC2229C58F0085D2A6 /* newProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		851A1BEF2229C58F0085D2A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		851A1BF12229C58F0085D2A6 /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
@@ -34,14 +50,15 @@
 		851A1BFB2229C5910085D2A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		851A1C012229C5E00085D2A6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowTableViewCell.swift; sourceTree = "<group>"; };
-		85331F5322332C86005D3B51 /* FirstTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTable.swift; sourceTree = "<group>"; };
 		85331F5522332CB0005D3B51 /* SecondTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTable.swift; sourceTree = "<group>"; };
-		85331F5722332CE7005D3B51 /* FirstCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollection.swift; sourceTree = "<group>"; };
 		85331F5922332D02005D3B51 /* SecondCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollection.swift; sourceTree = "<group>"; };
-		85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCollectionViewCell.swift; sourceTree = "<group>"; };
 		85331F5D22352F40005D3B51 /* RedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedTableViewCell.swift; sourceTree = "<group>"; };
 		85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedCollectionViewCell.swift; sourceTree = "<group>"; };
-		855388FF223549BD009AD98B /* OneTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTableViewController.swift; sourceTree = "<group>"; };
+		85C6C7702236B8DF00BCCA91 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
+		85E6FABA223DB5DB00FBBE09 /* GroupListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListViewController.swift; sourceTree = "<group>"; };
+		85E6FABC223DB60600FBBE09 /* AddGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupViewController.swift; sourceTree = "<group>"; };
+		85E6FABE223E57AB00FBBE09 /* GroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableViewCell.swift; sourceTree = "<group>"; };
+		85E6FAC0223E589100FBBE09 /* AllGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGroupTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +72,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85095A8B223C13D900949767 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				851A1BF62229C5910085D2A6 /* Assets.xcassets */,
+				851A1BF82229C5910085D2A6 /* LaunchScreen.storyboard */,
+				851A1BFB2229C5910085D2A6 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		85095A91223C1AB700949767 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				85095A8D223C1A3F00949767 /* FriendListViewController.swift */,
+				85095A8F223C1A9C00949767 /* FriendTableViewCell.swift */,
+				85095A98223D121C00949767 /* FriendCollection.swift */,
+				85095A92223CE9FA00949767 /* FriendCollectionViewCell.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		85095A94223CEA1A00949767 /* 001 */ = {
+			isa = PBXGroup;
+			children = (
+				85C6C7702236B8DF00BCCA91 /* TempView.swift */,
+				851A1BF12229C58F0085D2A6 /* RedViewController.swift */,
+				85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */,
+			);
+			path = 001;
+			sourceTree = "<group>";
+		};
+		85095A96223CEA5300949767 /* 020 */ = {
+			isa = PBXGroup;
+			children = (
+				85331F5522332CB0005D3B51 /* SecondTable.swift */,
+				85331F5922332D02005D3B51 /* SecondCollection.swift */,
+				85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */,
+				85331F5D22352F40005D3B51 /* RedTableViewCell.swift */,
+			);
+			path = 020;
+			sourceTree = "<group>";
+		};
+		85095A97223CEB0600949767 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				85E6FABA223DB5DB00FBBE09 /* GroupListViewController.swift */,
+				85E6FABC223DB60600FBBE09 /* AddGroupViewController.swift */,
+				85E6FABE223E57AB00FBBE09 /* GroupTableViewCell.swift */,
+				85E6FAC0223E589100FBBE09 /* AllGroupTableViewCell.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		85095A9A223D2D6A00949767 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				85095A9B223D2DDD00949767 /* UITableViewExtension.swift */,
+				85095A9D223D2E5200949767 /* UICollectionViewExtension.swift */,
+				85095AA1223D2FE800949767 /* Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		851A1BE32229C58F0085D2A6 = {
 			isa = PBXGroup;
 			children = (
@@ -75,21 +155,14 @@
 			isa = PBXGroup;
 			children = (
 				851A1BEF2229C58F0085D2A6 /* AppDelegate.swift */,
-				851A1C012229C5E00085D2A6 /* LoginViewController.swift */,
-				851A1BF12229C58F0085D2A6 /* RedViewController.swift */,
-				85331F5322332C86005D3B51 /* FirstTable.swift */,
-				85331F5722332CE7005D3B51 /* FirstCollection.swift */,
-				85331F5922332D02005D3B51 /* SecondCollection.swift */,
-				85331F5522332CB0005D3B51 /* SecondTable.swift */,
 				851A1BF32229C58F0085D2A6 /* Main.storyboard */,
-				851A1BF62229C5910085D2A6 /* Assets.xcassets */,
-				851A1BF82229C5910085D2A6 /* LaunchScreen.storyboard */,
-				851A1BFB2229C5910085D2A6 /* Info.plist */,
-				85331F4322303F2A005D3B51 /* YellowTableViewCell.swift */,
-				85331F5B22352165005D3B51 /* GreenCollectionViewCell.swift */,
-				85331F5F223534A5005D3B51 /* RedCollectionViewCell.swift */,
-				85331F5D22352F40005D3B51 /* RedTableViewCell.swift */,
-				855388FF223549BD009AD98B /* OneTableViewController.swift */,
+				85095A8B223C13D900949767 /* Resources */,
+				85095A9A223D2D6A00949767 /* Helpers */,
+				851A1C012229C5E00085D2A6 /* LoginViewController.swift */,
+				85095A91223C1AB700949767 /* Friends */,
+				85095A97223CEB0600949767 /* Groups */,
+				85095A94223CEA1A00949767 /* 001 */,
+				85095A96223CEA5300949767 /* 020 */,
 			);
 			path = newProject;
 			sourceTree = "<group>";
@@ -152,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85095A8C223C145D00949767 /* Info.plist in Resources */,
 				851A1BFA2229C5910085D2A6 /* LaunchScreen.storyboard in Resources */,
 				851A1BF72229C5910085D2A6 /* Assets.xcassets in Resources */,
 				851A1BF52229C58F0085D2A6 /* Main.storyboard in Resources */,
@@ -165,18 +239,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85331F5422332C86005D3B51 /* FirstTable.swift in Sources */,
 				85331F5A22332D02005D3B51 /* SecondCollection.swift in Sources */,
 				851A1C022229C5E00085D2A6 /* LoginViewController.swift in Sources */,
+				85095A99223D121C00949767 /* FriendCollection.swift in Sources */,
+				85095A9E223D2E5200949767 /* UICollectionViewExtension.swift in Sources */,
+				85095A8E223C1A3F00949767 /* FriendListViewController.swift in Sources */,
 				851A1BF22229C58F0085D2A6 /* RedViewController.swift in Sources */,
-				85538900223549BD009AD98B /* OneTableViewController.swift in Sources */,
+				85E6FABB223DB5DB00FBBE09 /* GroupListViewController.swift in Sources */,
 				851A1BF02229C58F0085D2A6 /* AppDelegate.swift in Sources */,
+				85C6C7712236B8DF00BCCA91 /* TempView.swift in Sources */,
+				85095A93223CE9FA00949767 /* FriendCollectionViewCell.swift in Sources */,
 				85331F5622332CB0005D3B51 /* SecondTable.swift in Sources */,
 				85331F60223534A5005D3B51 /* RedCollectionViewCell.swift in Sources */,
-				85331F5822332CE7005D3B51 /* FirstCollection.swift in Sources */,
 				85331F5E22352F40005D3B51 /* RedTableViewCell.swift in Sources */,
+				85E6FABF223E57AB00FBBE09 /* GroupTableViewCell.swift in Sources */,
+				85095AA2223D2FE800949767 /* Extension.swift in Sources */,
+				85095A90223C1A9C00949767 /* FriendTableViewCell.swift in Sources */,
+				85095A9C223D2DDD00949767 /* UITableViewExtension.swift in Sources */,
+				85E6FABD223DB60600FBBE09 /* AddGroupViewController.swift in Sources */,
 				85331F4422303F2A005D3B51 /* YellowTableViewCell.swift in Sources */,
-				85331F5C22352165005D3B51 /* GreenCollectionViewCell.swift in Sources */,
+				85E6FAC1223E589100FBBE09 /* AllGroupTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCU5ZS4YA8;
-				INFOPLIST_FILE = newProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/newProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -342,7 +424,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCU5ZS4YA8;
-				INFOPLIST_FILE = newProject/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/newProject/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

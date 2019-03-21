@@ -40,6 +40,7 @@ class LoginViewController: UIViewController {
         }
     }
     
+    //передаём логин на красную вьюху
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let redVC = segue.destination as? RedViewController {
             redVC.login = loginTextField.text
