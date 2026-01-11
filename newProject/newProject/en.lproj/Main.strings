@@ -1,0 +1,39 @@
+
+/* Class = "UILabel"; text = "Login"; ObjectID = "4Wo-oh-33z"; */
+"4Wo-oh-33z.text" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Sign in"; ObjectID = "CFk-lc-J84"; */
+"CFk-lc-J84.normalTitle" = "Sign in";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Nzd-0P-m0r"; */
+"Nzd-0P-m0r.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "quit"; ObjectID = "TLK-TZ-6tl"; */
+"TLK-TZ-6tl.normalTitle" = "quit";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "UxE-5I-Hs4"; */
+"UxE-5I-Hs4.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "YIh-V4-pMq"; */
+"YIh-V4-pMq.text" = "Label";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "YdO-Zd-vo3"; */
+"YdO-Zd-vo3.text" = "Password";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "i2R-4g-uF4"; */
+"i2R-4g-uF4.text" = "Title";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "jqw-zz-CdX"; */
+"jqw-zz-CdX.title" = "Title";
+
+/* Class = "UILabel"; text = "ClosedSpase"; ObjectID = "nAh-0Z-Lu5"; */
+"nAh-0Z-Lu5.text" = "ClosedSpase";
+
+/* Class = "UITabBarItem"; title = "Группы"; ObjectID = "nPj-tl-QIe"; */
+"nPj-tl-QIe.title" = "Группы";
+
+/* Class = "UITabBarItem"; title = "Друзья"; ObjectID = "w1V-Yb-iQU"; */
+"w1V-Yb-iQU.title" = "Друзья";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zTG-FJ-Utz"; */
+"zTG-FJ-Utz.text" = "Label";
